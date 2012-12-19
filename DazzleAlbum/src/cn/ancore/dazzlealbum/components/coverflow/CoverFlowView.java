@@ -28,13 +28,13 @@ import android.widget.LinearLayout;
  */
 public class CoverFlowView extends LinearLayout {
 
-	// 异步获取放封面图片接�?
+	// 异步获取放封面图片接口
 	private WeakReference<CoverFlowAsyncImageLoader> mAsyncImageLoader;
-	// coverflow动作监听�?
+	// coverflow动作监听器
 	private WeakReference<CoverFlowListener> mCoverFlowListener;
 	// 未在屏幕中显示的图片列表
 	private Set<CoverFlowImageView> mOffscreenCovers = new HashSet<CoverFlowImageView>();
-	// 在屏幕中显示的图片列�?
+	// 在屏幕中显示的图片列�?
 	private HashMap<Integer, CoverFlowImageView> mOnscreenCovers = new HashMap<Integer, CoverFlowImageView>();
 	// 封面图片列表
 	private HashMap<Integer, Bitmap> mCoverImages = new HashMap<Integer, Bitmap>();
@@ -101,7 +101,7 @@ public class CoverFlowView extends LinearLayout {
 	}
 
 	/**
-	 * 控件初始�?
+	 * 控件初始�?
 	 */
 	private void setUpInitialState() {
 		// Create the scrollView
