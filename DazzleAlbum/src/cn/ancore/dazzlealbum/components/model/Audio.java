@@ -26,4 +26,8 @@ public class Audio extends BaseModel{
 	@DatabaseField(columnName=FIELD_NAME_AUDIO_DATA, dataType=DataType.BYTE_ARRAY)
 	public byte[] mData;
 	
+	public Audio(){
+		super();
+	}
+	
 }

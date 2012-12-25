@@ -7,6 +7,8 @@ package cn.ancore.dazzlealbum.commons;
  */
 public class Config {
 	
+	//pwd kt2Gm9Ke9dt6
+	
 	public static final String APP_NAME = "DazzleAlbum";
 	public static final boolean DEBUG = true;
 	public static final String LOG_LEVEL = "DEBUG,ERROR,INFO,WARN";

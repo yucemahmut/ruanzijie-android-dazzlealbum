@@ -13,15 +13,15 @@ public class Settings {
 
 	private static Settings mInstance;
 
-	// SD卡是否可�?
+	// SD卡是否可用
 	private boolean mSDCardAvailable = true;
-	// 应用版本�?
+	// 应用版本号
 	private String mAppVersion = "";
-	// 应用版本号代�?
+	// 应用版本号代码
 	private int mAppVersionCode;
-	// 系统版本�?
+	// 系统版本号
 	private int mSdkVersion;
-	// 渠道�?
+	// 渠道号
 	private String mMarketChannel = "";
 	// 是否是大容量内存
 	private boolean mSystemMemoryVast;

@@ -18,6 +18,8 @@ public class Photo extends BaseModel {
 
 	private static final long serialVersionUID = -8151126199942645617L;
 
+	public static final String FIELD_NAME_PHOTO_KEY = "key";
+
 	public static final String FIELD_NAME_PHOTO_PATH = "path";
 
 	public static final String FIELD_NAME_PHOTO_NAME = "name";
@@ -28,6 +30,14 @@ public class Photo extends BaseModel {
 
 	public static final String FIELD_NAME_PHOTO_AUDIO = "audio_id";
 
+	public static final String FIELD_NAME_PHOTO_ALBUM = "album_id";
+
+	@DatabaseField(columnName = FIELD_NAME_PHOTO_KEY, dataType = DataType.STRING, index = true)
+	public String mPhotoKey;
+
+	@DatabaseField(columnName = FIELD_NAME_PHOTO_ALBUM, dataType = DataType.STRING)
+	public String mAlbumKey;
+	
 	@DatabaseField(columnName = FIELD_NAME_PHOTO_PATH, dataType = DataType.STRING, index = true)
 	public String mPath;
 
@@ -42,5 +52,9 @@ public class Photo extends BaseModel {
 
 	@DatabaseField(columnName = FIELD_NAME_PHOTO_AUDIO, foreign = true, foreignAutoRefresh = true)
 	public Audio mAudio;
+
+	public Photo() {
+		super();
+	}
 
 }

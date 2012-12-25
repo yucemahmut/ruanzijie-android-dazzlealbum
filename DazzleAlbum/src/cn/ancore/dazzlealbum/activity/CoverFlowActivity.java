@@ -6,6 +6,7 @@ import java.io.IOException;
 import cn.ancore.dazzlealbum.R;
 import cn.ancore.dazzlealbum.components.coverflow.CoverFlowListener;
 import cn.ancore.dazzlealbum.components.coverflow.CoverFlowView;
+import cn.ancore.dazzlealbum.components.database.MediaDatabaseHandler;
 
 import android.app.Activity;
 import android.content.Context;
@@ -67,6 +68,7 @@ public class CoverFlowActivity extends Activity implements CoverFlowListener{
 
 		// Cache the reflected bitmaps
 		mReflectedBitmaps = mCoverflow.getReflectedBitmaps();
+		MediaDatabaseHandler.queryAlbumFromMediaStore(this);
 	}
 
 	@Override
